@@ -2,6 +2,9 @@ let title = document.getElementById("title");
 let text_div = document.getElementById("text");
 let story_div = document.getElementById("selector")
 let content_div = document.getElementById("content");
+let restart_a_tag = document.getElementById("restart-tag");
+
+restart_a_tag.style.display = "none";
 
 let data;
 let stories = [];
@@ -41,6 +44,10 @@ function refreshContent(page_id) {
 
   let links = findAllLinks(text);
   let new_text = replaceLinksWithATags(text, links, page["links"]);
+
+  if (links.length == 0) {
+    restart_a_tag.style.display = "inline-block";
+  }
 
   text_div.innerHTML = new_text;
 
@@ -112,13 +119,16 @@ function loadStory(filename) {
 }
 
 let story_template = "<div class='story-div-display'><h2>{0}</h2> <button onclick='loadStory({1})'>Start</button></div>\n";
-function displayAllStories() {
-  let index = 0;
-  stories.forEach(async story => {
+async function displayAllStories() {
+  let count = 0;
+
+  for (let index = 0; index < stories.length; index++) {
+    let story = stories[index];
+
     let code = story_template;
     code = code.replace("{0}", story["title"]);
     code = code.replace("{1}", '"' + story["file"] + '"');
-
+    
     story_div.innerHTML += code;
     let div = story_div.getElementsByClassName("story-div-display")[index];
 
@@ -129,11 +139,8 @@ function displayAllStories() {
 
     bg_url = data["textbox_bg"];
 
-    console.log(f, bg_url)
-
-    div.style.backgroundImage = "url('{0}')".replace("{0}", bg_url);
-    index++;
-  });
+    div.style.setProperty("--image_url", "url('{0}')".replace("{0}", bg_url));
+  }
 }
 
 async function loadAllStories() {

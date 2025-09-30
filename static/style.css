@@ -3,7 +3,7 @@ body {
 
     background-size: cover;
 
-    background: linear-gradient(270deg,rgba(24, 59, 173, 1) 0%, rgba(146, 52, 158, 1) 100%);
+    background-color: rgb(235, 235, 235);
 
     overflow: hidden;
 
@@ -21,18 +21,18 @@ body {
 }
 
 #selector div {
+    --image_url: url("");
+
     flex: 1 1 0;
 
     margin: 1%;
     padding: 0.5%;
-
-    background-color: rgb(91, 3, 138);
     
     box-shadow: 
-    1px 1px 0 white,
-   -1px 1px 0 white,
-    1px -1px 0 white,
-   -1px -1px 0 white;
+    2px 2px 0 black,
+   -2px 2px 0 black,
+    2px -2px 0 black,
+   -2px -2px 0 black;
 
    border-radius: 20px;
 
@@ -43,10 +43,66 @@ body {
    text-align: center;
 
    font-size: xx-large;
+
+   text-shadow: 
+    1px 1px 0 white,
+   -1px 1px 0 white,
+    1px -1px 0 white,
+   -1px -1px 0 white;
+
+   background-image: linear-gradient(rgba(255, 255, 255, 0)), var(--image_url);
+
+   transition: all 1s ease;
+}
+
+#selector div::before {
+    content: "";
+    position: absolute;
+    background: rgba(255, 255, 255, 0.3);
+    opacity: 0;
+    inset: 0;
+    transition: all 0.5s ease-in-out;
+    z-index: 0;
+}
+
+#selector div:hover::before {
+    opacity: 1;
+}
+
+#selector div:hover {
+    scale: 0.9;
+    z-index: 1;
+}
+
+#selector div * {
+    z-index: 2;
 }
 
 #selector div button {
     font-size: x-large;
+
+    background-color: white;
+    border-radius: 20px;
+
+    border-style: solid;
+
+    transition: all 1s;
+
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+#selector div button:hover {
+    background-color: black;
+    color: white;
+
+    scale: 1.1;
+}
+
+#restart-div {
+    display: flex;
+    width: 100%;
+    justify-content: center;
 }
 
 h1 {

@@ -1,6 +1,6 @@
 {
-    "bg": "/static/images/einhorn.jpg",
-    "textbox_bg": "/static/images/pink_textbox.jpg",
+    "bg": "../static/images/einhorn.jpg",
+    "textbox_bg": "../static/images/pink_textbox.jpg",
     "pages": {
       "start": {
         "title": "Ein neuer Morgen",
