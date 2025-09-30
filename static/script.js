@@ -14,7 +14,7 @@ let a_tag_template = "<a name='{0}' href=''>{1}</a>";
 let last_file_name;
 
 async function loadPage(page_id, file_name = last_file_name) {
-  const resp = await fetch("../static/stories/" + file_name);
+  const resp = await fetch("./static/stories/" + file_name);
   data = await resp.json();
 
   refreshContent(page_id);
@@ -132,7 +132,7 @@ async function displayAllStories() {
 
     f = story["file"];
 
-    const resp = await fetch("../static/stories/" + f);
+    const resp = await fetch("./static/stories/" + f);
     data = await resp.json();
 
     bg_url = data["textbox_bg"];
@@ -142,7 +142,7 @@ async function displayAllStories() {
 }
 
 async function loadAllStories() {
-  const resp = await fetch("../static/stories/index.json");
+  const resp = await fetch("./static/stories/index.json");
   stories = await resp.json();
   stories = stories["stories"];
 
