@@ -1,6 +1,6 @@
 let title = document.getElementById("title");
 let text_div = document.getElementById("text");
-let story_div = document.getElementById("selector")
+let story_div = document.getElementById("selector");
 let content_div = document.getElementById("content");
 let restart_a_tag = document.getElementById("restart-tag");
 
@@ -13,7 +13,7 @@ let a_tag_template = "<a name='{0}' href=''>{1}</a>";
 
 let last_file_name;
 
-async function loadPage(page_id, file_name=last_file_name) {
+async function loadPage(page_id, file_name = last_file_name) {
   const resp = await fetch("../static/stories/" + file_name);
   data = await resp.json();
 
@@ -118,7 +118,8 @@ function loadStory(filename) {
   last_file_name = filename;
 }
 
-let story_template = "<div class='story-div-display'><h2>{0}</h2> <button onclick='loadStory({1})'>Start</button></div>\n";
+let story_template =
+  "<div class='story-div-display'><h2>{0}</h2> <button onclick='loadStory({1})'>Start</button></div>\n";
 async function displayAllStories() {
   let count = 0;
 
@@ -128,7 +129,7 @@ async function displayAllStories() {
     let code = story_template;
     code = code.replace("{0}", story["title"]);
     code = code.replace("{1}", '"' + story["file"] + '"');
-    
+
     story_div.innerHTML += code;
     let div = story_div.getElementsByClassName("story-div-display")[index];
 

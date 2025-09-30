@@ -1,172 +1,154 @@
 body {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 
-    background-size: cover;
+  background-size: cover;
 
-    background-color: rgb(235, 235, 235);
+  background-color: rgb(235, 235, 235);
 
-    overflow: hidden;
+  overflow: hidden;
 
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 #selector {
-    width: 100vw;
-    height: 100vh;
+  width: 100vw;
+  height: 100vh;
 
-    display: flex;
+  display: flex;
 
-    flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 #selector div {
-    --image_url: url("");
+  --image_url: url("");
 
-    flex: 1 1 0;
+  flex: 1 1 0;
 
-    margin: 1%;
-    padding: 0.5%;
-    
-    box-shadow: 
-    2px 2px 0 black,
-   -2px 2px 0 black,
-    2px -2px 0 black,
-   -2px -2px 0 black;
+  margin: 1%;
+  padding: 0.5%;
 
-   border-radius: 20px;
+  box-shadow: 2px 2px 0 black, -2px 2px 0 black, 2px -2px 0 black,
+    -2px -2px 0 black;
 
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
+  border-radius: 20px;
 
-   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
-   font-size: xx-large;
+  text-align: center;
 
-   text-shadow: 
-    1px 1px 0 white,
-   -1px 1px 0 white,
-    1px -1px 0 white,
-   -1px -1px 0 white;
+  font-size: xx-large;
 
-   background-image: linear-gradient(rgba(255, 255, 255, 0)), var(--image_url);
+  text-shadow: 1px 1px 0 white, -1px 1px 0 white, 1px -1px 0 white,
+    -1px -1px 0 white;
 
-   transition: all 1s ease;
+  background-image: linear-gradient(rgba(255, 255, 255, 0)), var(--image_url);
+
+  transition: all 1s ease;
 }
 
 #selector div::before {
-    content: "";
-    position: absolute;
-    background: rgba(255, 255, 255, 0.3);
-    opacity: 0;
-    inset: 0;
-    transition: all 0.5s ease-in-out;
-    z-index: 0;
+  content: "";
+  position: absolute;
+  background: rgba(255, 255, 255, 0.3);
+  opacity: 0;
+  inset: 0;
+  transition: all 0.5s ease-in-out;
+  z-index: 0;
 }
 
 #selector div:hover::before {
-    opacity: 1;
+  opacity: 1;
 }
 
 #selector div:hover {
-    scale: 0.9;
-    z-index: 1;
+  scale: 0.9;
+  z-index: 1;
 }
 
 #selector div * {
-    z-index: 2;
+  z-index: 2;
 }
 
 #selector div button {
-    font-size: x-large;
+  font-size: x-large;
 
-    background-color: white;
-    border-radius: 20px;
+  background-color: white;
+  border-radius: 20px;
 
-    border-style: solid;
+  border-style: solid;
 
-    transition: all 1s;
+  transition: all 1s;
 
-    margin-left: 20%;
-    margin-right: 20%;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 
 #selector div button:hover {
-    background-color: black;
-    color: white;
+  background-color: black;
+  color: white;
 
-    scale: 1.1;
+  scale: 1.1;
 }
 
 #restart-div {
-    display: flex;
-    width: 100%;
-    justify-content: center;
+  display: flex;
+  width: 100%;
+  justify-content: center;
 }
 
 h1 {
-    font-size: 4rem;
+  font-size: 4rem;
 
-    text-shadow: 
-    1px 1px 0 white,
-   -1px 1px 0 white,
-    1px -1px 0 white,
-   -1px -1px 0 white;
+  text-shadow: 1px 1px 0 white, -1px 1px 0 white, 1px -1px 0 white,
+    -1px -1px 0 white;
 }
 
 p {
-    display: inline;
+  display: inline;
 
-    font-size: 2rem;
+  font-size: 2rem;
 
-    text-shadow: 
-    1px 1px 0 white,
-   -1px 1px 0 white,
-    1px -1px 0 white,
-   -1px -1px 0 white;
+  text-shadow: 1px 1px 0 white, -1px 1px 0 white, 1px -1px 0 white,
+    -1px -1px 0 white;
 }
 
 a {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 
-    transition: all 0.5s;
-    font-size: 2rem;
-    text-shadow: none;
+  transition: all 0.5s;
+  font-size: 2rem;
+  text-shadow: none;
 }
 
 a:hover {
-    color: black;
-    text-shadow: 
-    1px 1px 0 white,
-   -1px 1px 0 white,
-    1px -1px 0 white,
-   -1px -1px 0 white;
+  color: black;
+  text-shadow: 1px 1px 0 white, -1px 1px 0 white, 1px -1px 0 white,
+    -1px -1px 0 white;
 }
 
 #content {
-    text-align: center;
-    background-size: cover;
-    background-repeat: none;
+  text-align: center;
+  background-size: cover;
+  background-repeat: none;
 
-    border-radius: 0px;
+  border-radius: 0px;
 
-    transition: all 0.5s;
+  transition: all 0.5s;
 
-    margin: 2%;
-    margin-top: 2%;
-    padding: 2%;
+  margin: 2%;
+  margin-top: 2%;
+  padding: 2%;
 
-    box-shadow: 
-    1px 1px 0 white,
-   -1px 1px 0 white,
-    1px -1px 0 white,
-   -1px -1px 0 white;
+  box-shadow: 1px 1px 0 white, -1px 1px 0 white, 1px -1px 0 white,
+    -1px -1px 0 white;
 
-   display: none;
+  display: none;
 }
 
 #content:hover {
-    border-radius: 100px;
+  border-radius: 100px;
 }
