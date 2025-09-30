@@ -137,7 +137,7 @@ async function displayAllStories() {
 
     bg_url = data["textbox_bg"];
 
-    div.style.setProperty("--image_url", "url('{0}')".replace("{0}", bg_url));
+    div.style.setProperty("--image_url", "url('{0}')".replace("{0}", "../" + bg_url));
   }
 }
 
