@@ -35,8 +35,7 @@ function refreshContent(page_id) {
   }
 
   document.body.style.backgroundImage = "url(" + bg_url + ")";
-  document.getElementById("content").style.backgroundImage =
-    "url(" + textbox_bg_url + ")";
+  document.getElementById("content").style.backgroundImage = "url(" + textbox_bg_url + ")";
 
   title.innerText = page["title"];
 
@@ -121,8 +120,6 @@ function loadStory(filename) {
 let story_template =
   "<div class='story-div-display'><h2>{0}</h2> <button onclick='loadStory({1})'>Start</button></div>\n";
 async function displayAllStories() {
-  let count = 0;
-
   for (let index = 0; index < stories.length; index++) {
     let story = stories[index];
 
