@@ -1,0 +1,186 @@
+{
+  "bg" : "../static/images/bg.jpg",
+  "textbox_bg" : "../static/images/textbox_bg.jpg",
+  "pages": {
+    "start": {
+      "title": "Der Wald",
+      "text": "Die Sonne ist längst untergegangen. Ein dichter Nebel kriecht zwischen den Bäumen hervor, und du findest dich auf einem schmalen Pfad wieder. Du erinnerst dich nicht, wie du hierhergekommen bist. Vor dir ragen die Schatten uralter Eichen. Du kannst {dem Pfad folgen}, {nach links in den Wald gehen} oder {umkehren}.",
+      "links": ["pfad_weiter", "seitenwald", "umkehren"]
+    },
+    "umkehren": {
+      "title": "Der Weg zurück",
+      "text": "Du drehst dich um, doch der Pfad hinter dir ist verschwunden. Nur dichter Nebel. Ein Flüstern dringt in dein Ohr: 'Es gibt kein Zurück.' Willst du {dem Flüstern folgen} oder {weiter in den Wald laufen}?",
+      "links": ["fluestern", "pfad_weiter"]
+    },
+    "pfad_weiter": {
+      "title": "Der Pfad",
+      "text": "Du gehst den Pfad entlang, die Äste knacken über dir. Nach einer Weile erkennst du eine verlassene {Hütte}, einen alten {Brunnen} und einen dunklen {Abzweig} in den Wald.",
+      "links": ["huette", "brunnen", "seitenwald"]
+    },
+    "seitenwald": {
+      "title": "Der dichte Wald",
+      "text": "Du schlägst dich durch dichtes Unterholz. Die Bäume stehen hier enger, kein Mondlicht dringt hindurch. Etwas bewegt sich im Schatten. Du kannst {weitergehen}, {dich verstecken} oder {zurück zum Pfad}.",
+      "links": ["tiefer_wald", "verstecken", "pfad_weiter"]
+    },
+    "fluestern": {
+      "title": "Das Flüstern",
+      "text": "Die Stimme wird lauter, fast verständlich. Sie lockt dich zu einem Baum, dessen Stamm aufgerissen ist. Im Inneren pulsiert ein schwaches Licht. Du kannst {hineinsehen}, {den Baum berühren} oder {weglaufen}.",
+      "links": ["baum_innen", "baum_beruehren", "pfad_weiter"]
+    },
+    "huette": {
+      "title": "Die Hütte",
+      "text": "Die Hütte sieht alt und verlassen aus. Die Fenster sind zerbrochen, die Tür hängt schief in den Angeln. Drinnen ist es dunkel. Willst du {hineingehen}, {um die Hütte herumschleichen} oder {zum Brunnen gehen}?",
+      "links": ["huette_innen", "huette_aussen", "brunnen"]
+    },
+    "brunnen": {
+      "title": "Der Brunnen",
+      "text": "Der alte Brunnen ist mit Moos überwuchert. Ein kalter Luftzug steigt aus der Tiefe auf. Du hörst etwas klirren. Willst du {hinuntersehen}, {etwas hinabwerfen} oder {zum Abzweig gehen}?",
+      "links": ["brunnen_schauen", "brunnen_werfen", "seitenwald"]
+    },
+    "tiefer_wald": {
+      "title": "Tiefe im Wald",
+      "text": "Du gehst tiefer in den Wald, bis du eine kleine Lichtung erreichst. In der Mitte steht eine zerfallene Statue einer Frau mit geschlossenen Augen. Du kannst {die Statue berühren}, {dich ausruhen} oder {zurückgehen}.",
+      "links": ["statue", "ruhen", "seitenwald"]
+    },
+    "verstecken": {
+      "title": "Versteckt",
+      "text": "Du duckst dich hinter einen Busch. Schritte nähern sich. Eine große, knochige Gestalt mit leeren Augenhöhlen geht langsam vorbei. Willst du {still bleiben}, {ihm folgen} oder {weglaufen}?",
+      "links": ["still", "gestalt_folgen", "pfad_weiter"]
+    },
+    "baum_innen": {
+      "title": "Im Baum",
+      "text": "Du siehst in den Stamm und erkennst ein Auge, das dich direkt anstarrt. Es bewegt sich. Willst du {hineingreifen}, {zurückschrecken} oder {es ignorieren und gehen}?",
+      "links": ["auge_greifen", "seitenwald", "pfad_weiter"]
+    },
+    "baum_beruehren": {
+      "title": "Der Baum lebt",
+      "text": "Kaum berührst du die Rinde, wächst sie um deine Hand. Stimmen schreien in deinem Kopf. Du kannst {dich wehren}, {loslassen} oder {dich ergeben}.",
+      "links": ["baum_kampf", "seitenwald", "ende_baum"]
+    },
+    "huette_innen": {
+      "title": "Innen in der Hütte",
+      "text": "Die Luft riecht nach Moder. Auf dem Tisch liegt ein Tagebuch. In der Ecke sitzt ein altes Schaukelpferd, das sich von allein bewegt. Willst du {das Tagebuch lesen}, {das Pferd untersuchen} oder {den Raum verlassen}?",
+      "links": ["tagebuch", "pferd", "huette_aussen"]
+    },
+    "huette_aussen": {
+      "title": "Um die Hütte herum",
+      "text": "Hinter der Hütte findest du frische Fußspuren im Schlamm. Sie führen in den Wald. Du kannst {den Spuren folgen}, {zurück ins Haus gehen} oder {zum Brunnen}?",
+      "links": ["spuren", "huette_innen", "brunnen"]
+    },
+    "brunnen_schauen": {
+      "title": "In den Brunnen",
+      "text": "Als du hinunter siehst, blinzeln zwei Augen aus der Dunkelheit zurück. Eine Hand greift nach dir! Willst du {dich wehren}, {springen} oder {fliehen}?",
+      "links": ["kampf_brunnen", "ende_brunnen", "pfad_weiter"]
+    },
+    "brunnen_werfen": {
+      "title": "Das Geräusch",
+      "text": "Du wirfst einen Stein hinab. Ein markerschütternder Schrei antwortet dir aus der Tiefe. Plötzlich beginnt der Brunnen zu beben. Willst du {weglaufen}, {den Brunnen berühren} oder {stehenbleiben}?",
+      "links": ["pfad_weiter", "ende_brunnen", "seitenwald"]
+    },
+    "statue": {
+      "title": "Die Statue",
+      "text": "Du berührst die Statue. Die Augen öffnen sich, und schwarzes Blut läuft aus ihnen. Eine Stimme sagt: 'Dein Schicksal ist besiegelt.' Du kannst {wegrennen}, {fragen wer sie ist} oder {die Statue zerstören}.",
+      "links": ["pfad_weiter", "statue_dialog", "ende_statue"]
+    },
+    "ruhen": {
+      "title": "Ausruhen",
+      "text": "Du setzt dich hin und schließt die Augen. Als du sie wieder öffnest, ist die Statue verschwunden, und um dich herum stehen Gestalten mit leeren Gesichtern. {Fortsetzen}.",
+      "links": ["ende_wahnsinn"]
+    },
+    "still": {
+      "title": "Still verharren",
+      "text": "Du bleibst ganz ruhig. Die Gestalt bleibt stehen, dreht langsam den Kopf zu dir und flüstert: 'Ich sehe dich.' {Fliehen}.",
+      "links": ["pfad_weiter"]
+    },
+    "gestalt_folgen": {
+      "title": "Der Schattenführer",
+      "text": "Du folgst der Gestalt durch den Wald. Sie führt dich zu einem unterirdischen Eingang. Du kannst {hineingehen}, {weglaufen} oder {sie ansprechen}.",
+      "links": ["untergrund", "pfad_weiter", "ende_gestalt"]
+    },
+    "auge_greifen": {
+      "title": "Das Auge",
+      "text": "Als du hineingreifst, reißt dich das Auge hinein. Du siehst Bilder von Blut, Feuer und Gesichtern, die du nicht kennst. Du wirst eins mit dem Baum. Ende.",
+      "links": []
+    },
+    "baum_kampf": {
+      "title": "Kampf mit dem Baum",
+      "text": "Du reißt dich los, deine Haut blutet. Doch du bist frei. {Zurück zum Wald}.",
+      "links": ["seitenwald"]
+    },
+    "ende_baum": {
+      "title": "Ende — Der Baum",
+      "text": "Du lässt dich vom Baum umschlingen. Dein Körper verschwindet, und deine Seele wird Teil des Waldes. Ende.",
+      "links": []
+    },
+    "tagebuch": {
+      "title": "Das Tagebuch",
+      "text": "Im Tagebuch steht: 'Der Wald nimmt, was ihm gehört. Niemand entkommt.' Auf der letzten Seite ist dein Name geschrieben. Du kannst {es zerreißen}, {es behalten} oder {es liegenlassen}.",
+      "links": ["huette_aussen", "pfad_weiter", "huette_innen"]
+    },
+    "pferd": {
+      "title": "Das Schaukelpferd",
+      "text": "Du berührst das Pferd. Es wiehert plötzlich laut und die Tür knallt zu. Aus dem Boden ragen Hände, die nach dir greifen. {Wehren}.",
+      "links": ["ende_huette"]
+    },
+    "spuren": {
+      "title": "Die Spuren",
+      "text": "Du folgst den Spuren und gelangst zu einem Kreis aus Steinen. In der Mitte liegt ein Tierkadaver, angeordnet wie ein Ritual. Du kannst {den Kreis betreten}, {umkehren} oder {den Kadaver untersuchen}.",
+      "links": ["ende_ritual", "huette_aussen", "seitenwald"]
+    },
+    "kampf_brunnen": {
+      "title": "Kampf am Brunnen",
+      "text": "Du kämpfst gegen die Hand und schaffst es, dich loszureißen. Dein Arm ist voller Kratzer. {Zurück zum Pfad}.",
+      "links": ["pfad_weiter"]
+    },
+    "ende_brunnen": {
+      "title": "Ende — Der Brunnen",
+      "text": "Die Hand zieht dich in die Tiefe. Kälte umgibt dich, und Wasser füllt deine Lungen. Dein letzter Blick ist in die Augen, die unten warten. Ende.",
+      "links": []
+    },
+    "statue_dialog": {
+      "title": "Die Statue spricht",
+      "text": "Die Statue öffnet den Mund: 'Ich bin der Wächter. Und du bist verloren.' Ein kalter Griff packt dein Herz. {Ende}.",
+      "links": ["ende_statue"]
+    },
+    "ende_statue": {
+      "title": "Ende — Die Statue",
+      "text": "Dein Herz bleibt stehen, und du wirst zu Stein, wie alle vor dir. Ende.",
+      "links": []
+    },
+    "ende_wahnsinn": {
+      "title": "Ende — Wahnsinn",
+      "text": "Du schreist, aber kein Laut verlässt deine Lippen. Die leeren Gesichter kommen näher, bis sie dich verschlingen. Ende.",
+      "links": []
+    },
+    "untergrund": {
+      "title": "Der Untergrund",
+      "text": "Du steigst hinab in einen dunklen Tunnel. Am Ende hörst du Stimmen und siehst Kerzen. Es ist ein Kult. Du kannst {mitmachen}, {kämpfen} oder {fliehen}.",
+      "links": ["ende_kult", "ende_kampf", "pfad_weiter"]
+    },
+    "ende_gestalt": {
+      "title": "Ende — Die Gestalt",
+      "text": "Du sprichst die Gestalt an. Sie dreht sich um, und du erkennst dein eigenes Gesicht. Danach siehst du nur noch Dunkelheit. Ende.",
+      "links": []
+    },
+    "ende_huette": {
+      "title": "Ende — Die Hütte",
+      "text": "Die Hände ziehen dich in die Erde, und du wirst Teil des Hauses, wie alle vor dir. Ende.",
+      "links": []
+    },
+    "ende_ritual": {
+      "title": "Ende — Das Ritual",
+      "text": "Sobald du den Kreis betrittst, flammen die Steine auf. Stimmen rufen deinen Namen, und du verlierst dich in einem ewigen Ritual. Ende.",
+      "links": []
+    },
+    "ende_kult": {
+      "title": "Ende — Der Kult",
+      "text": "Du trittst dem Kreis bei. Maskierte Gestalten legen dir eine Maske auf. Ab jetzt gehörst du zu ihnen. Ende.",
+      "links": []
+    },
+    "ende_kampf": {
+      "title": "Ende — Der Kampf",
+      "text": "Du kämpfst gegen die Kultisten, doch es sind zu viele. Dunkelheit überkommt dich. Ende.",
+      "links": []
+    }
+  }
+}

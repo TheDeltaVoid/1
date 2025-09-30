@@ -1,0 +1,77 @@
+{
+    "bg": "/static/images/einhorn.jpg",
+    "textbox_bg": "/static/images/pink_textbox.jpg",
+    "pages": {
+      "start": {
+        "title": "Ein neuer Morgen",
+        "text": "Du erwachst in einer Wiese voller rosa Blumen. Über dir glitzert der Himmel, als hätte jemand funkelnden Zucker ausgestreut. In der Ferne hörst du ein fröhliches Wiehern. Alles fühlt sich leicht und magisch an. Du kannst {dem Wiehern folgen}, {dich zwischen die Blumen legen} oder {den nahen Wald betreten}.",
+        "links": ["pfad_weiter", "pause", "seitenwald"]
+      },
+      "pfad_weiter": {
+        "title": "Das Regenbogenfeld",
+        "text": "Du folgst dem Wiehern und kommst auf eine Wiese, die von Regenbögen überspannt wird. In der Mitte steht ein strahlendes Einhorn und wartet auf dich. Du kannst {das Einhorn ansprechen}, {mit den Regenbögen spielen} oder {zurückgehen}.",
+        "links": ["einhorn_treffen", "regenbogen_spiel", "start"]
+      },
+      "pause": {
+        "title": "Das Blütenmeer",
+        "text": "Du legst dich in die weichen Blumen, und sie schmiegen sich sanft an dich. Ein Schwarm bunter Schmetterlinge umfliegt dich und malt Muster in die Luft. Du kannst {eins der Muster verfolgen}, {die Augen schließen} oder {aufstehen und weitergehen}.",
+        "links": ["schmetterlinge", "pause_ruhen", "start"]
+      },
+      "seitenwald": {
+        "title": "Der Glitzerwald",
+        "text": "Du trittst in den Wald, dessen Bäume in sanftem Rosa und Gold schimmern. Zwischen den Zweigen siehst du kleine Feen, die kichern und tanzen. Sie winken dir zu. Du kannst {mit den Feen tanzen}, {dem Lichtstrahl folgen}, oder {zur Wiese zurückkehren}.",
+        "links": ["feen_tanz", "lichtstrahl", "start"]
+      },
+      "pause_ruhen": {
+        "title": "Ein süßer Traum",
+        "text": "Du schließt die Augen und träumst von Zuckerwattewolken. Als du erwachst, liegt ein kleiner Regenbogenkristall in deiner Hand. Du fühlst dich voller Freude.",
+        "links": ["start"]
+      },
+      "schmetterlinge": {
+        "title": "Der Schmetterlingspfad",
+        "text": "Die Schmetterlinge führen dich zu einem versteckten Pfad aus Blüten. Am Ende des Pfads wartet das Einhorn, das dich mit funkelnden Augen begrüßt. Du kannst {das Einhorn begrüßen}, {es umarmen}, oder {zurück zur Wiese}.",
+        "links": ["einhorn_treffen", "umarmen", "start"]
+      },
+      "regenbogen_spiel": {
+        "title": "Das Regenbogenspiel",
+        "text": "Du springst durch die Regenbögen, die sich wie Rutschen anfühlen. Dein Lachen hallt über die Wiese, und sogar das Einhorn lacht mit. Danach kommt es neugierig auf dich zu.",
+        "links": ["einhorn_treffen"]
+      },
+      "feen_tanz": {
+        "title": "Der Tanz der Freude",
+        "text": "Die Feen tanzen um dich herum und wirbeln goldenen Staub in die Luft. Du drehst dich lachend mit ihnen im Kreis, bis du ganz leicht wirst. Als der Tanz endet, erscheint das Einhorn zwischen den Bäumen.",
+        "links": ["einhorn_treffen"]
+      },
+      "lichtstrahl": {
+        "title": "Der Lichtweg",
+        "text": "Du folgst einem Strahl aus goldenem Licht, der dich direkt zu einer Lichtung bringt. Dort wartet das Einhorn, freundlich und voller Magie.",
+        "links": ["einhorn_treffen"]
+      },
+      "einhorn_treffen": {
+        "title": "Die Begegnung",
+        "text": "Das Einhorn kommt näher und stupst dich sanft an. Seine Mähne glitzert, und seine Augen strahlen Wärme. Du kannst {mit ihm sprechen}, {es umarmen} oder {mit ihm den Wald erkunden}.",
+        "links": ["sprechen", "umarmen", "einhorn_folgen"]
+      },
+      "umarmen": {
+        "title": "Freundschaft",
+        "text": "Du umarmst das Einhorn, und ein Regenbogen erscheint am Himmel. Von diesem Moment an seid ihr Freunde fürs Leben.",
+        "links": ["einhorn_folgen"]
+      },
+      "sprechen": {
+        "title": "Ein Gespräch",
+        "text": "Das Einhorn spricht mit sanfter Stimme: 'Ich habe auf dich gewartet. Gemeinsam werden wir Glück in die Welt bringen.'",
+        "links": ["einhorn_folgen"]
+      },
+      "einhorn_folgen": {
+        "title": "Das Regenbogenschloss",
+        "text": "Das Einhorn führt dich zu einem Schloss aus Regenbögen und Zuckerwatte. Dort feiern Feen, Schmetterlinge und andere Einhörner ein Fest zu deinen Ehren. Alles ist voller Freude, Musik und Lachen.",
+        "links": ["schloss"]
+      },
+      "schloss": {
+        "title": "Ein glückliches Ende",
+        "text": "Im Regenbogenschloss bist du von Freunden und Glück umgeben. Von nun an lebst du in einer Welt voller Magie, Liebe und Freude. Dein Herz ist leicht, und alles ist gut.",
+        "links": []
+      }
+    }
+  }
+  
