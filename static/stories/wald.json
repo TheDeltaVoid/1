@@ -1,6 +1,6 @@
 {
-  "bg": "../static/images/bg..jpg",
-  "textbox_bg": "../static/images/textbox_bg..jpg",
+  "bg": "../static/images/bg.jpg",
+  "textbox_bg": "../static/images/textbox_bg.jpg",
   "pages": {
     "start": {
       "title": "Der Wald",
